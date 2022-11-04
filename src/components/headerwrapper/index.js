@@ -4,6 +4,7 @@ import {
   Header,
   HeaderTitle,
   TitleLink,
+  LoginImg,
   HeaderLinks,
   ListLinks,
   ListItem,
@@ -46,6 +47,19 @@ HeaderWrapper.Link = function HeaderWrapperLink({
     <TitleLink {...restProps} bg={bg} fixed={fixed}>
       {children}
     </TitleLink>
+  );
+};
+
+HeaderWrapper.LoginImg = function HeaderWrapperLoginImg({
+  children,
+  bg,
+  fixed,
+  ...restProps
+}) {
+  return (
+    <LoginImg {...restProps} bg={bg} fixed={fixed}>
+      {children}
+    </LoginImg>
   );
 };
 

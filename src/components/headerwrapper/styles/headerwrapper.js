@@ -94,6 +94,23 @@ export const TitleLink = styled(Link)`
     }
   }}
 `;
+export const LoginImg = styled(Link)`
+ position: absolute;
+    top: 50px;
+    right: 100px;
+    margin: 10px;
+  font-weight: bold;
+  color: var(--bs-gray-dark);
+  ${({ bg, fixed }) => {
+    if (bg === 'true' && fixed) {
+      return `color: var(--bs-gray-dark)`;
+    } else if (bg === 'true') {
+      return `
+        color: var(--bs-white);
+      `;
+    }
+  }}
+`;
 export const HeaderLinks = styled.div`
   display: flex;
   align-items: center;

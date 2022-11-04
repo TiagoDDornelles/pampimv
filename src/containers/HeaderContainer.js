@@ -3,6 +3,7 @@ import links from '../constants/routes/nav-links';
 import { HeaderWrapper, Banner, Jumbotron } from '../components';
 import wpp from '../images/wpp.png';
 import logo from '../images/logo.png';
+import login from '../images/login.png';
 
 import { AdvancedSearchContainer, SideNavigationContainer } from './index';
 
@@ -38,6 +39,9 @@ const HeaderContainer = ({ bg, source }) => {
               />
               (55) 9 9999 9999
             </HeaderWrapper.Link>
+            <HeaderWrapper.LoginImg bg={bg} fixed={fixed} to="/">
+              <a bg="false" class="headerwrapper__ListAnchor-sc-1podsgm-9 hGVNod" href="/login"><img src={login} alt=""/></a> 
+            </HeaderWrapper.LoginImg>
           </HeaderWrapper.Title>
         </HeaderWrapper.Container>
         <HeaderWrapper.Container>
