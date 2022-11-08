@@ -39,8 +39,14 @@ const HeaderContainer = ({ bg, source }) => {
               />
               (55) 9 9999 9999
             </HeaderWrapper.Link>
-            <HeaderWrapper.LoginImg bg={bg} fixed={fixed} to="/">
-              <a bg="false" class="headerwrapper__ListAnchor-sc-1podsgm-9 hGVNod" href="/login"><img src={login} alt=""/></a> 
+            <HeaderWrapper.LoginImg bg={bg} fixed={fixed} to="/login">
+              <a
+                bg="false"
+                class="headerwrapper__ListAnchor-sc-1podsgm-9 hGVNod"
+                href="/login"
+              >
+                <img src={login} alt="" />
+              </a>
             </HeaderWrapper.LoginImg>
           </HeaderWrapper.Title>
         </HeaderWrapper.Container>
