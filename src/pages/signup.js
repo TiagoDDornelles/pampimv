@@ -1,8 +1,34 @@
 import React, { Fragment } from "react";
 import { HeaderContainer, FooterContainer } from "../containers";
 import { Signup, Form } from "../components";
+import Axios from 'axios';
+import { useState } from "react";
+import Swal from "sweetalert2";
+
+
+
 
 const Signupp = () => {
+
+  const [usuarioReg, setUsuarioReg] = useState("");
+  const [senhaReg, setSenhaReg] = useState("");
+  const [emailReg, setEmailReg] = useState("");
+  
+  const register = () => {
+  
+    Axios.post("http://localhost:3001/register",{
+      usuario: usuarioReg,
+      senha: senhaReg,
+      email: emailReg,
+    }).then((Response)=>{
+      Swal.fire(
+        'Good job!',
+        'You clicked the button!',
+        'success'
+      )
+    });
+  };
+
   return (
     <Fragment>
       <HeaderContainer bg="false" />
@@ -16,22 +42,22 @@ const Signupp = () => {
               <Form>
                 <Form.FormGroup>
                   <Form.Label>Name</Form.Label>
-                  <Form.Input type="text" />
+                  <Form.Input type="text" onChange ={(e)=>{setUsuarioReg(e.target.value);}}/>
                 </Form.FormGroup>
                 <Form.FormGroup>
                   <Form.Label>Email</Form.Label>
-                  <Form.Input type="text" />
+                  <Form.Input type="text" onChange ={(e)=>{setEmailReg(e.target.value);}}/>
                 </Form.FormGroup>
                 <Form.FormGroup>
                   <Form.Label>Password</Form.Label>
-                  <Form.Input type="text" />
+                  <Form.Input type="text" onChange ={(e)=>{setSenhaReg(e.target.value);}}/>
                 </Form.FormGroup>
                 <Form.FormGroup>
                   <Form.Label>Confirm Password</Form.Label>
                   <Form.Input type="text" />
                 </Form.FormGroup>
                 <Form.FormGroup>
-                  <Form.SubmitInput type="submit" value="Signup" />
+                  <Form.SubmitInput type="submit" value="Signup" onClick={register}/>
                 </Form.FormGroup>
               </Form>
             </Signup.InnerContent>
