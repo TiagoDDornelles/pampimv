@@ -26,7 +26,7 @@ export const Option = styled.option`
   padding: 16px;
 `;
 
-export const Input = styled.input.attrs({ type: "text" })`
+export const Input = styled.input.attrs({ })`
   width: 100%;
   padding: 18px 9px;
   outline: none;

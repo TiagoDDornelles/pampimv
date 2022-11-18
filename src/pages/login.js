@@ -1,8 +1,10 @@
 import React, { Fragment } from "react";
 import { HeaderContainer, FooterContainer } from "../containers";
-import { Login, Form } from "../components";
+import { Login, Form} from "../components";
 import { useState } from "react";
 import Axios from 'axios';
+import { Redirect } from "react-router-dom";
+
 
 const Loginn = () => {
 
@@ -20,6 +22,7 @@ const Loginn = () => {
         setloginStatus(Response.data.message)
       }else{
         setloginStatus(Response.data[0].usuario)
+        
       }
     });
   };
@@ -41,7 +44,7 @@ const Loginn = () => {
                 </Form.FormGroup>
                 <Form.FormGroup>
                   <Form.Label>Password</Form.Label>
-                  <Form.Input type="text" onChange ={(e)=>{setSenha(e.target.value);}}/>
+                  <Form.Input type="password" onChange ={(e)=>{setSenha(e.target.value);}}/>
                 </Form.FormGroup>
                 <Form.FormGroup>
                   <Form.SubmitInput type="submit" value="Login" onClick={login} />

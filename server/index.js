@@ -1,6 +1,7 @@
 const express = require("express");
 const mysql = require("mysql");
 const cors = require("cors");
+const { Redirect } = require("react-router-dom");
 
 const app = express();
 
@@ -21,8 +22,13 @@ app.post('/register',(req, res) =>{
     const email = req.body.email
 
     db.query("INSERT INTO Login (usuario, senha, email) VALUE (?,?,?)", [usuario, senha, email], (err, result)=>{
-        console.log(err);
+        if(err){
+            res.send("deu errado!")
+        }else(result)
+            res.send("deu certo!")
+            
     });
+
 });
 
 
@@ -33,15 +39,10 @@ app.post('/login', (req, res)=>{
 
     db.query("SELECT * FROM Login where usuario = ? AND senha = ?", [usuario, senha], (err, result)=>{
         if(err){
-            res.send({err: err});
-        }
-
-
-        if (result.length > 0){
-            res.send(result);
-        }else{
-            res.send({message: "Tudo OK Logado!!"});
-        }
+            res.send("não logou");
+            console.log("NAO DEU CERTO")
+        }else(result)
+            res.send("funcionou");        
     });
 })
 

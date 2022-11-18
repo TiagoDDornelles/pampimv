@@ -50,11 +50,11 @@ const Signupp = () => {
                 </Form.FormGroup>
                 <Form.FormGroup>
                   <Form.Label>Password</Form.Label>
-                  <Form.Input type="text" onChange ={(e)=>{setSenhaReg(e.target.value);}}/>
+                  <Form.Input type="password" onChange ={(e)=>{setSenhaReg(e.target.value);}}/>
                 </Form.FormGroup>
                 <Form.FormGroup>
                   <Form.Label>Confirm Password</Form.Label>
-                  <Form.Input type="text" />
+                  <Form.Input type="password" />
                 </Form.FormGroup>
                 <Form.FormGroup>
                   <Form.SubmitInput type="submit" value="Signup" onClick={register}/>
