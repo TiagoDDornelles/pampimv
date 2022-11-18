@@ -22,7 +22,6 @@ const Loginn = () => {
         setloginStatus(Response.data.message)
       }else{
         setloginStatus(Response.data[0].usuario)
-        
       }
     });
   };
