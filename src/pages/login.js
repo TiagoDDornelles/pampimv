@@ -1,30 +1,52 @@
 import React, { Fragment } from "react";
 import { HeaderContainer, FooterContainer } from "../containers";
-import { Login, Form} from "../components";
+import { Login, Form, Add} from "../components";
 import { useState } from "react";
-import Axios from 'axios';
-import { Redirect } from "react-router-dom";
+import axios from 'axios';
+import { useHistory } from 'react-router-dom';
+import AddLisiting from './add-listing';
 
+// const Loginn = () => {
 
-const Loginn = () => {
+//   const [usuario, setUsuario] = useState("");
+//   const [senha, setSenha] = useState("");
+//   const [loginStatus, setloginStatus] = useState("");
 
-  
-  const [usuario, setUsuario] = useState("");
-  const [senha, setSenha] = useState("");
-  const [loginStatus, setloginStatus] = useState("");
+//   const login = () => {
+//     Axios.post("http://localhost:3001/login",{
+//       usuario: usuario,
+//       senha: senha,
+//     }).then((Response)=>{
+//       if(Response.data.message){
+//         setloginStatus(Response.data.message)
+//       }else{
+//         setloginStatus(Response.data[0].usuario)
+//       }
+//     });
+//   };
 
-  const login = () => {
-    Axios.post("http://localhost:3001/login",{
-      usuario: usuario,
-      senha: senha,
-    }).then((Response)=>{
-      if(Response.data.message){
-        setloginStatus(Response.data.message)
-      }else{
-        setloginStatus(Response.data[0].usuario)
-      }
-    });
-  };
+  const Loginn = () => {
+    const [usuario, setUsuario] = useState("");
+    const [senha, setSenha] = useState("");
+    const [loginStatus, setloginStatus] = useState("");
+    const [msg, setMsg] = useState('');
+    const history = useHistory();
+ 
+    const Auth = async (e) => {
+        e.preventDefault();
+        try {
+            await axios.post('http://localhost:3001/login', {
+              usuario: usuario,
+              senha: senha
+            });
+            history.push(AddLisiting);
+        } catch (error) {
+            if (error.response) {
+                setMsg(error.response.data.msg);
+            }
+        }
+    }
+ 
 
   return (
     <Fragment>
@@ -46,7 +68,7 @@ const Loginn = () => {
                   <Form.Input type="password" onChange ={(e)=>{setSenha(e.target.value);}}/>
                 </Form.FormGroup>
                 <Form.FormGroup>
-                  <Form.SubmitInput type="submit" value="Login" onClick={login} />
+                  <Form.SubmitInput type="submit" value="Login" onClick={Loginn} />
                 </Form.FormGroup>
               </Form>
             </Login.InnerContent>
