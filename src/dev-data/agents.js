@@ -28,7 +28,7 @@ const agents = [
     listings: [
       {
         id: 1,
-        title: "Apartment for rent",
+        title: "Apartmento lux 2",
         slug: "apartment-for-rent",
         price: price(35000),
         location: "Mombasa",
@@ -69,7 +69,7 @@ const agents = [
       },
       {
         id: 2,
-        title: "House for Sell",
+        title: "Casa de esquina",
         slug: "house-for-sell",
         price: price(35000),
         location: "Nakuru",
@@ -130,7 +130,7 @@ const agents = [
     listings: [
       {
         id: 1,
-        title: "Apartment for rent",
+        title: "Apartamento Lux 2",
         slug: "apartment-for-rent",
         price: price(35000),
         location: "Mombasa",
@@ -171,7 +171,7 @@ const agents = [
       },
       {
         id: 2,
-        title: "House for Sell",
+        title: "Casa de Esquina",
         slug: "house-for-sell",
         price: price(35000),
         location: "Nakuru",
@@ -232,7 +232,7 @@ const agents = [
     listings: [
       {
         id: 1,
-        title: "Apartment for rent",
+        title: "Apartmento Lux 3",
         slug: "apartment-for-rent",
         price: price(35000),
         location: "Mombasa",
@@ -273,7 +273,7 @@ const agents = [
       },
       {
         id: 2,
-        title: "House for Sell",
+        title: "Casa de esquina",
         slug: "house-for-sell",
         price: price(35000),
         location: "Nakuru",
@@ -334,7 +334,7 @@ const agents = [
     listings: [
       {
         id: 1,
-        title: "Apartment for rent",
+        title: "Apartamento Lux 2",
         slug: "apartment-for-rent",
         price: price(35000),
         location: "Mombasa",
@@ -375,7 +375,7 @@ const agents = [
       },
       {
         id: 2,
-        title: "House for Sell",
+        title: "Casa de esquina",
         slug: "house-for-sell",
         price: price(35000),
         location: "Nakuru",
