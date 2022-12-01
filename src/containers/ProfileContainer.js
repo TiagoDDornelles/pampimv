@@ -32,7 +32,7 @@ const ProfileContainer = () => {
           <Profile.BioTop>
             <Form.FormGroup>
               <Form.Label>Nome</Form.Label>
-              <Form.Input type="text" value="Kevin Caster" />
+              <Form.Input type="text" value="Tiago Dornelles" />
             </Form.FormGroup>
             <Form.FormGroup>
               <Form.Label>Email</Form.Label>

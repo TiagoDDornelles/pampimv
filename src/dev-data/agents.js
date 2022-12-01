@@ -8,7 +8,7 @@ const price = (price) => {
 const agents = [
   {
     id: 1,
-    name: "Kevin Caster",
+    name: "Tiago Dornelles",
     email: "kevinn@gmail.com",
     phone: "+2572067895",
     address: "P.O BOX 2456 Nairobi",
@@ -28,7 +28,7 @@ const agents = [
     listings: [
       {
         id: 1,
-        title: "Apartment for rent",
+        title: "Apartmento para Alugar",
         slug: "apartment-for-rent",
         price: price(35000),
         location: "Mombasa",
@@ -44,7 +44,7 @@ const agents = [
           "Fire Place",
         ],
         agent: {
-          name: "Elizabeth Keen",
+          name: "Gabriel Fogaca",
           image: "agent1.jpg",
         },
         features: {
@@ -69,7 +69,7 @@ const agents = [
       },
       {
         id: 2,
-        title: "House for Sell",
+        title: "Casa para Venda",
         slug: "house-for-sell",
         price: price(35000),
         location: "Nakuru",
@@ -85,7 +85,7 @@ const agents = [
           "Fire Place",
         ],
         agent: {
-          name: "Kevin Caster",
+          name: "Tiago Dornelles",
           image: "agent3.jpg",
         },
         features: {
@@ -111,7 +111,7 @@ const agents = [
   },
   {
     id: 2,
-    name: "Priscilla Frankson",
+    name: "Ranieri da Silva",
     email: "priscilla@gmail.com",
     phone: "+2572067895",
     address: "P.O BOX 2456 Nairobi",
@@ -130,7 +130,7 @@ const agents = [
     listings: [
       {
         id: 1,
-        title: "Apartment for rent",
+        title: "Apartmento para Alugar",
         slug: "apartment-for-rent",
         price: price(35000),
         location: "Mombasa",
@@ -146,7 +146,7 @@ const agents = [
           "Fire Place",
         ],
         agent: {
-          name: "Elizabeth Keen",
+          name: "Gabriel Fogaca",
           image: "agent1.jpg",
         },
         features: {
@@ -171,7 +171,7 @@ const agents = [
       },
       {
         id: 2,
-        title: "House for Sell",
+        title: "Casa para Venda",
         slug: "house-for-sell",
         price: price(35000),
         location: "Nakuru",
@@ -187,7 +187,7 @@ const agents = [
           "Fire Place",
         ],
         agent: {
-          name: "Kevin Caster",
+          name: "Tiago Dornelles",
           image: "agent3.jpg",
         },
         features: {
@@ -232,7 +232,7 @@ const agents = [
     listings: [
       {
         id: 1,
-        title: "Apartment for rent",
+        title: "Apartmento para Alugar",
         slug: "apartment-for-rent",
         price: price(35000),
         location: "Mombasa",
@@ -248,7 +248,7 @@ const agents = [
           "Fire Place",
         ],
         agent: {
-          name: "Elizabeth Keen",
+          name: "Gabriel Fogaca",
           image: "agent1.jpg",
         },
         features: {
@@ -289,7 +289,7 @@ const agents = [
           "Fire Place",
         ],
         agent: {
-          name: "Kevin Caster",
+          name: "Tiago Dornelles",
           image: "agent3.jpg",
         },
         features: {
@@ -334,7 +334,7 @@ const agents = [
     listings: [
       {
         id: 1,
-        title: "Apartment for rent",
+        title: "Apartamento para Alugar",
         slug: "apartment-for-rent",
         price: price(35000),
         location: "Mombasa",
@@ -350,7 +350,7 @@ const agents = [
           "Fire Place",
         ],
         agent: {
-          name: "Elizabeth Keen",
+          name: "Gabriel Fogaca",
           image: "agent1.jpg",
         },
         features: {
@@ -375,7 +375,7 @@ const agents = [
       },
       {
         id: 2,
-        title: "House for Sell",
+        title: "Casa para Venda",
         slug: "house-for-sell",
         price: price(35000),
         location: "Nakuru",
@@ -391,7 +391,7 @@ const agents = [
           "Fire Place",
         ],
         agent: {
-          name: "Kevin Caster",
+          name: "Tiago Dornelles",
           image: "agent3.jpg",
         },
         features: {

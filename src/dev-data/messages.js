@@ -1,7 +1,7 @@
 export const messages = [
   {
     id: 1,
-    from: "Kevin Caster",
+    from: "Tiago Dornelles",
     to: 3,
     body: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium aut quod molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, officiis! Fuga deserunt consequuntur iure repellendus expedita consectetur, est sequi quod qui explicabo consequatur tempora?",
     read: true,
@@ -17,7 +17,7 @@ export const messages = [
     read: true,
     emailFrom: "joram@gmail.com",
     phone: +254720843306,
-    title: "Interested in The House for Sell in Nairobi County",
+    title: "Interested in The Casa para Venda in Nairobi County",
   },
   {
     id: 3,
@@ -27,6 +27,6 @@ export const messages = [
     read: true,
     emailFrom: "priscilla@gmail.com",
     phone: +254720843306,
-    title: "Interested in The House for Sell in Nairobi County",
+    title: "Interested in The Casa para Venda in Nairobi County",
   },
 ];

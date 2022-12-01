@@ -9,7 +9,7 @@ const price = (price) => {
 const listing = [
   {
     id: 1,
-    title: "Apartment for rent",
+    title: "Apartmento para Alugar",
     slug: "apartment-for-rent",
     price: price(350000),
     location: "Mombasa",
@@ -25,7 +25,7 @@ const listing = [
       "Fire Place",
     ],
     agent: {
-      name: "Elizabeth Keen",
+      name: "Gabriel Fogaca",
       image: "agent1.jpg",
     },
     features: {
@@ -50,7 +50,7 @@ const listing = [
   },
   {
     id: 2,
-    title: "House for Sell",
+    title: "Casa para Venda",
     slug: "house-for-sell",
     price: price(25000),
     location: "Nakuru",
@@ -66,7 +66,7 @@ const listing = [
       "Fire Place",
     ],
     agent: {
-      name: "Kevin Caster",
+      name: "Tiago Dornelles",
       image: "agent3.jpg",
     },
     features: {
@@ -90,7 +90,7 @@ const listing = [
   },
   {
     id: 3,
-    title: "Apartment In Nairobi",
+    title: "Apartamento em Ijui",
     slug: "apartment-in-nairobi",
     price: price(31000),
     location: "Nairobi",
@@ -106,7 +106,7 @@ const listing = [
       "Fire Place",
     ],
     agent: {
-      name: "Elizabeth Keen",
+      name: "Gabriel Fogaca",
       image: "agent4.jpg",
     },
     features: {
@@ -130,7 +130,7 @@ const listing = [
   },
   {
     id: 4,
-    title: "Renovated House For Sale",
+    title: "Casa renovada em Ijui",
     slug: "renoveted-house-for-sale",
     price: price(35000),
     location: "Kisumu",
@@ -146,7 +146,7 @@ const listing = [
       "Fire Place",
     ],
     agent: {
-      name: "Priscilla Frankson",
+      name: "Ranieri da Silva",
       image: "agent2.jpg",
     },
     features: {
@@ -170,7 +170,7 @@ const listing = [
   },
   {
     id: 5,
-    title: "House in Nakuru",
+    title: "Casa no Bairro Alvorada",
     slug: "house-in-nakuru",
     price: price(35000),
     location: "Nairobi",
@@ -210,7 +210,7 @@ const listing = [
   },
   {
     id: 6,
-    title: "Apartment for rent",
+    title: "",
     slug: "apartment-for-rent",
     price: price(35000),
     location: "Nairobi",
@@ -226,7 +226,7 @@ const listing = [
       "Fire Place",
     ],
     agent: {
-      name: "Kevin Caster",
+      name: "Tiago Dornelles",
       image: "agent2.jpg",
     },
     features: {
@@ -290,7 +290,7 @@ const listing = [
   },
   {
     id: 8,
-    title: "Apartment for rent",
+    title: "",
     slug: "apartmen-for-rent",
     price: price(35000),
     location: "Nairobi",
@@ -306,7 +306,7 @@ const listing = [
       "Fire Place",
     ],
     agent: {
-      name: "Elizabeth Keen",
+      name: "Gabriel Fogaca",
       image: "agent4.jpg",
     },
     features: {
@@ -330,7 +330,7 @@ const listing = [
   },
   {
     id: 9,
-    title: "Apartment for rent",
+    title: "Apartmento para Alugar",
     slug: "apartment-for-rent",
     price: price(35000),
     location: "Nairobi",
