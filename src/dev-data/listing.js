@@ -9,7 +9,7 @@ const price = (price) => {
 const listing = [
   {
     id: 1,
-    title: "Apartmento para Alugar",
+    title: "Apartamento para Alugar",
     slug: "apartment-for-rent",
     price: price(350000),
     location: "Mombasa",
@@ -50,7 +50,7 @@ const listing = [
   },
   {
     id: 2,
-    title: "Casa para Venda",
+    title: "House for Sell",
     slug: "house-for-sell",
     price: price(25000),
     location: "Nakuru",
@@ -90,7 +90,7 @@ const listing = [
   },
   {
     id: 3,
-    title: "Apartamento em Ijui",
+    title: "Apartment In Nairobi",
     slug: "apartment-in-nairobi",
     price: price(31000),
     location: "Nairobi",
@@ -130,7 +130,7 @@ const listing = [
   },
   {
     id: 4,
-    title: "Casa renovada em Ijui",
+    title: "Renovated House For Sale",
     slug: "renoveted-house-for-sale",
     price: price(35000),
     location: "Kisumu",
@@ -170,7 +170,7 @@ const listing = [
   },
   {
     id: 5,
-    title: "Casa no Bairro Alvorada",
+    title: "House in Nakuru",
     slug: "house-in-nakuru",
     price: price(35000),
     location: "Nairobi",
@@ -210,7 +210,7 @@ const listing = [
   },
   {
     id: 6,
-    title: "",
+    title: "Apartamento para Alugar",
     slug: "apartment-for-rent",
     price: price(35000),
     location: "Nairobi",
@@ -250,7 +250,7 @@ const listing = [
   },
   {
     id: 7,
-    title: "Offices for rent",
+    title: "Apartamento Figueiredo",
     slug: "offices-for-rent",
     price: price(35000),
     location: "Nairobi",
@@ -290,7 +290,7 @@ const listing = [
   },
   {
     id: 8,
-    title: "",
+    title: "Apartamento para Alugar",
     slug: "apartmen-for-rent",
     price: price(35000),
     location: "Nairobi",
@@ -330,7 +330,7 @@ const listing = [
   },
   {
     id: 9,
-    title: "Apartmento para Alugar",
+    title: "Apartamento para Alugar",
     slug: "apartment-for-rent",
     price: price(35000),
     location: "Nairobi",

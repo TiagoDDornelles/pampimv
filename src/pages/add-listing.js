@@ -22,7 +22,7 @@ const AddLisiting = () => {
       <HeaderContainer bg={false} />
       <Section bgColor="--bs-fade-info">
         <Section.InnerContainer>
-          <DashboardContainer title={id ? "Edit Property" : "Add Property"}>
+          <DashboardContainer title={id ? "Edit Property" : "Adicionar Imóveis"}>
             <Add>
               <Form>
                 <Descrition />
