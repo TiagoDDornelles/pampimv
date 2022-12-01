@@ -62,6 +62,7 @@ import axios from "axios";
                 </Form.FormGroup>
                 <Form.FormGroup>
                   <Form.SubmitInput type="submit" value="Cadastrar" onClick={Signupp}/>
+
                 </Form.FormGroup>
               </Form>
             </Signup.InnerContent>

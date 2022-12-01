@@ -9,6 +9,7 @@ import Swal from "sweetalert2";
 const Loginn = () => {
   const [usuario, setUsuario] = useState("");
   const [senha, setSenha] = useState("");
+  const [loginStatus, setloginStatus] = useState("");
   const [msg, setMsg] = useState('');
   const history = useHistory();
 
@@ -39,16 +40,12 @@ const Loginn = () => {
         }
       });
 
-
-
-
     } catch (error) {
       if (error.response) {
         setMsg(error.response.data.msg);
       }
     }
   }
-
 
   return (
     <Fragment>
@@ -66,7 +63,7 @@ const Loginn = () => {
                   <Form.Input type="text" onChange={(e) => { setUsuario(e.target.value); }} />
                 </Form.FormGroup>
                 <Form.FormGroup>
-                  <Form.Label>Senha</Form.Label>
+                  <Form.Label>Password</Form.Label>
                   <Form.Input type="password" onChange={(e) => { setSenha(e.target.value); }} />
                 </Form.FormGroup>
                 <Form.FormGroup>
@@ -77,12 +74,12 @@ const Loginn = () => {
             <Login.Footer>
               <Login.Text>
                 <Login.Anchor to="/forgot-password">
-                  Esqueceu a Senha ?
+                Esqueceu a senha ?
                 </Login.Anchor>
               </Login.Text>
               <Login.Text>
-                Não tem Cadastro ?{" "}
-                <Login.Anchor to="/signup">Novo Cadastro</Login.Anchor>
+                Não possui Conta ?{" "}
+                <Login.Anchor to="/signup">Realizar Cadastro</Login.Anchor>
               </Login.Text>
             </Login.Footer>
           </Login.Content>
