@@ -43,7 +43,7 @@ const Descrition = () => {
                 None
               </Form.Option>
               <Form.Option>Rental</Form.Option>
-              <Form.Option>Sales</Form.Option>
+              <Form.Option>Venda</Form.Option>
             </Form.Select>
           </Form.FormGroup>
         </Add.DescriptionContentTop>

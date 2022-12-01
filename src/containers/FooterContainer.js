@@ -9,7 +9,7 @@ const FooterContainer = () => {
           <Footer.Item>
             <Footer.Title>Real Home</Footer.Title>
             <Footer.Text>
-              1337 Tengecha Road,Nairobi.Imarisha Tower, Second Floor, Room 135
+              1337 Tengecha Road,Brasil.Imarisha Tower, Second Floor, Room 135
             </Footer.Text>
             <Footer.List>
               <Footer.ListItem>

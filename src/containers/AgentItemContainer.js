@@ -33,7 +33,7 @@ const AgentItemContainer = ({ agent }) => {
             <Agents.Span>Call : </Agents.Span> {agent.phone}
           </Agents.CallInfo>
           <Agents.MoreInfo>
-            <Agents.Anchor to={`agent/${agent.id}`}>View Profile</Agents.Anchor>
+            <Agents.Anchor to={`agent/${agent.id}`}>Ver perfil</Agents.Anchor>
           </Agents.MoreInfo>
         </Agents.Wrapper>
       </Agents.Bottom>

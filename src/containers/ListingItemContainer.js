@@ -30,7 +30,7 @@ const ListingItemContainer = ({ featured, width }) => {
           </Listing.Text>
           <Listing.Button>
             <Listing.Anchor to={`/property/${featured.id}`}>
-              Details
+              Detalhes
             </Listing.Anchor>
           </Listing.Button>
           <Listing.AgentContainer>

@@ -40,11 +40,11 @@ const ProfileContainer = () => {
             </Form.FormGroup>
             <Form.FormGroup>
               <Form.Label>Celular</Form.Label>
-              <Form.Input type="text" value="+2547564867" />
+              <Form.Input type="text" value="+9 9999-9090" />
             </Form.FormGroup>
             <Form.FormGroup>
               <Form.Label>Endereço</Form.Label>
-              <Form.Input type="text" value="P.0 22344 Nairobi" />
+              <Form.Input type="text" value="P.0 22344 Brasil" />
             </Form.FormGroup>
             <Form.FormGroup>
               <Form.Label>Pais</Form.Label>

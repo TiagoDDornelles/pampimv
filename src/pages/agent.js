@@ -64,7 +64,7 @@ const Agentt = () => {
                   </Agent.TopLeft>
                   <Agent.TopRight>
                     <Agent.Title>{agent.name}</Agent.Title>
-                    <Agent.Text>Sales Agent</Agent.Text>
+                    <Agent.Text>Venda Agent</Agent.Text>
                     <Agent.List>
                       <Agent.ListItem>
                         <Agent.Icon name="fas fa-phone-alt" />

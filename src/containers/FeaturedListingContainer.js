@@ -27,7 +27,7 @@ const FeaturedListingContainer = () => {
           ))}
         </Section.Content>
         <Section.Footer>
-          <Section.Button>More Listing</Section.Button>
+          <Section.Button>Ver Mais</Section.Button>
         </Section.Footer>
       </Section.InnerContainer>
     </Section>
