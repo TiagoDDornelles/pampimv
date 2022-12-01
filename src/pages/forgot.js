@@ -10,7 +10,7 @@ const Forgott = () => {
         <Forgot.Container>
           <Forgot.Content>
             <Forgot.Header>
-              <Forgot.Title>Reset Your Password</Forgot.Title>
+              <Forgot.Title>Alterar a Senha</Forgot.Title>
             </Forgot.Header>
             <Forgot.InnerContent>
               <Form>
@@ -19,7 +19,7 @@ const Forgott = () => {
                   <Form.Input type="text" />
                 </Form.FormGroup>
                 <Form.FormGroup>
-                  <Form.SubmitInput type="submit" value="Send Reset Token" />
+                  <Form.SubmitInput type="submit" value="Enviar Alteração" />
                 </Form.FormGroup>
               </Form>
             </Forgot.InnerContent>

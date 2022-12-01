@@ -12,7 +12,7 @@ const ProfileContainer = () => {
     <Profile>
       <Form>
         <Profile.Avatar>
-          <Profile.Title>Choose Avatar</Profile.Title>
+          <Profile.Title>Meu Avatar</Profile.Title>
           <Profile.AvatarContent>
             <Profile.Image source="default.jpg" />
             {/* Special file input case */}
@@ -24,14 +24,14 @@ const ProfileContainer = () => {
             />
 
             <Profile.Button onClick={handleClick}>
-              Choose File To Upload
+              Fazer Upload
             </Profile.Button>
           </Profile.AvatarContent>
         </Profile.Avatar>
         <Profile.Bio>
           <Profile.BioTop>
             <Form.FormGroup>
-              <Form.Label>Name</Form.Label>
+              <Form.Label>Nome</Form.Label>
               <Form.Input type="text" value="Kevin Caster" />
             </Form.FormGroup>
             <Form.FormGroup>
@@ -39,20 +39,20 @@ const ProfileContainer = () => {
               <Form.Input type="text" value="caster@gmail.com" />
             </Form.FormGroup>
             <Form.FormGroup>
-              <Form.Label>Phone</Form.Label>
+              <Form.Label>Celular</Form.Label>
               <Form.Input type="text" value="+2547564867" />
             </Form.FormGroup>
             <Form.FormGroup>
-              <Form.Label>Address</Form.Label>
+              <Form.Label>Endereço</Form.Label>
               <Form.Input type="text" value="P.0 22344 Nairobi" />
             </Form.FormGroup>
             <Form.FormGroup>
-              <Form.Label>County</Form.Label>
-              <Form.Input type="text" value="Nairobi" />
+              <Form.Label>Pais</Form.Label>
+              <Form.Input type="text" value="Brasil" />
             </Form.FormGroup>
             <Form.FormGroup>
-              <Form.Label>Town/Estate</Form.Label>
-              <Form.Input type="text" value="Westlands" />
+              <Form.Label>Estado</Form.Label>
+              <Form.Input type="text" value="Rio Grande do Sul" />
             </Form.FormGroup>
           </Profile.BioTop>
           <Profile.BioBottom>
@@ -64,7 +64,7 @@ const ProfileContainer = () => {
         </Profile.Bio>
         <Profile.Social>
           <Profile.SocialHeader>
-            <Profile.Title>Social Accounts</Profile.Title>
+            <Profile.Title>Redes Sociais</Profile.Title>
           </Profile.SocialHeader>
           <Profile.SocialContent>
             <Form.FormGroup>
@@ -85,7 +85,7 @@ const ProfileContainer = () => {
             </Form.FormGroup>
           </Profile.SocialContent>
           <Form.FormGroup>
-            <Form.SubmitInput value="Save Changes" />
+            <Form.SubmitInput value="Salvar Alterações" />
           </Form.FormGroup>
         </Profile.Social>
       </Form>

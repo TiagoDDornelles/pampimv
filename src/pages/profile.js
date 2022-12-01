@@ -13,7 +13,7 @@ const UserProfile = () => {
       <HeaderContainer />
       <Section bgColor="--bs-fade-info">
         <Section.InnerContainer>
-          <DashboardContainer title="My Account">
+          <DashboardContainer title="Meu Perfil">
             <ProfileContainer />
           </DashboardContainer>
         </Section.InnerContainer>

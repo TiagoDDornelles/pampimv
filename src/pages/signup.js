@@ -22,7 +22,7 @@ import axios from "axios";
               email: emailReg,
               senha: senhaReg,
             });
-            history.push("/add-listing");
+            history.push("/login");
             Swal.fire(
                        'Cadastro concluido com sucesso!',
                      )
@@ -40,12 +40,12 @@ import axios from "axios";
         <Signup.Container>
           <Signup.Content>
             <Signup.Header>
-              <Signup.Title>Signup</Signup.Title>
+              <Signup.Title>Novo Cadastro</Signup.Title>
             </Signup.Header>
             <Signup.InnerContent>
               <Form>
                 <Form.FormGroup>
-                  <Form.Label>Name</Form.Label>
+                  <Form.Label>Nome</Form.Label>
                   <Form.Input type="text" onChange ={(e)=>{setUsuarioReg(e.target.value);}}/>
                 </Form.FormGroup>
                 <Form.FormGroup>
@@ -53,21 +53,21 @@ import axios from "axios";
                   <Form.Input type="text" onChange ={(e)=>{setEmailReg(e.target.value);}}/>
                 </Form.FormGroup>
                 <Form.FormGroup>
-                  <Form.Label>Password</Form.Label>
+                  <Form.Label>Senha</Form.Label>
                   <Form.Input type="password" onChange ={(e)=>{setSenhaReg(e.target.value);}}/>
                 </Form.FormGroup>
                 <Form.FormGroup>
-                  <Form.Label>Confirm Password</Form.Label>
+                  <Form.Label>Confirmar Senha</Form.Label>
                   <Form.Input type="password" onChange ={(e)=>{setSenhaReg2(e.target.value);}}/>
                 </Form.FormGroup>
                 <Form.FormGroup>
-                  <Form.SubmitInput type="submit" value="Signup" onClick={Signupp}/>
+                  <Form.SubmitInput type="submit" value="Cadastrar" onClick={Signupp}/>
                 </Form.FormGroup>
               </Form>
             </Signup.InnerContent>
             <Signup.Footer>
               <Signup.Text>
-                Already Have Account ?{" "}
+                Já tem conta ?{" "}
                 <Signup.Anchor to="/login">Login</Signup.Anchor>
               </Signup.Text>
             </Signup.Footer>

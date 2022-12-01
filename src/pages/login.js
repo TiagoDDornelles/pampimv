@@ -9,7 +9,6 @@ import Swal from "sweetalert2";
 const Loginn = () => {
   const [usuario, setUsuario] = useState("");
   const [senha, setSenha] = useState("");
-  const [loginStatus, setloginStatus] = useState("");
   const [msg, setMsg] = useState('');
   const history = useHistory();
 
@@ -29,7 +28,7 @@ const Loginn = () => {
             timer: 5000,
             timerProgressBar: true,
           }).then((result) => {
-            history.push('/add-listing')
+            history.push('/dashboard')
           })
         } else {
           Swal.fire({
@@ -67,7 +66,7 @@ const Loginn = () => {
                   <Form.Input type="text" onChange={(e) => { setUsuario(e.target.value); }} />
                 </Form.FormGroup>
                 <Form.FormGroup>
-                  <Form.Label>Password</Form.Label>
+                  <Form.Label>Senha</Form.Label>
                   <Form.Input type="password" onChange={(e) => { setSenha(e.target.value); }} />
                 </Form.FormGroup>
                 <Form.FormGroup>
@@ -78,14 +77,13 @@ const Loginn = () => {
             <Login.Footer>
               <Login.Text>
                 <Login.Anchor to="/forgot-password">
-                  Forgot Password ?
+                  Esqueceu a Senha ?
                 </Login.Anchor>
               </Login.Text>
               <Login.Text>
-                Don't have an Account ?{" "}
-                <Login.Anchor to="/signup">Sign Up</Login.Anchor>
+                Não tem Cadastro ?{" "}
+                <Login.Anchor to="/signup">Novo Cadastro</Login.Anchor>
               </Login.Text>
-              <h1>Resultado:{loginStatus}</h1>
             </Login.Footer>
           </Login.Content>
         </Login.Container>

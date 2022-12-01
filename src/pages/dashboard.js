@@ -26,12 +26,12 @@ const Dashboard = () => {
       <HeaderContainer />
       <Section bgColor="--bs-fade-info">
         <Section.InnerContainer>
-          <DashboardContainer title="Agency Summaries">
+          <DashboardContainer title="Resumos da Imobiliária">
             <Summary.Top>
               <Summary.Anchor to="/dashboard_properties" bg="var(--bs-teal)">
                 <Summary.AnchorDiv>
                   <Summary.Title>{properties.length}</Summary.Title>
-                  <Summary.Text>All Properties</Summary.Text>
+                  <Summary.Text>Propriedades</Summary.Text>
                 </Summary.AnchorDiv>
                 <Summary.AnchorDiv>
                   <Summary.Icon name="fas fa-map-marker-alt" />
@@ -40,7 +40,7 @@ const Dashboard = () => {
               <Summary.Anchor to="/dashboard_agents" bg="var(--bs-pink)">
                 <Summary.AnchorDiv>
                   <Summary.Title>{agents.length}</Summary.Title>
-                  <Summary.Text>All Agents</Summary.Text>
+                  <Summary.Text>Funcionarios</Summary.Text>
                 </Summary.AnchorDiv>
                 <Summary.AnchorDiv>
                   <Summary.Icon name="fas fa-users" />
@@ -49,7 +49,7 @@ const Dashboard = () => {
             </Summary.Top>
             <Summary.Bottom>
               <Summary.BottomHeader>
-                <Summary.Title>Properties By Category</Summary.Title>
+                <Summary.Title>Propriedades por categoria</Summary.Title>
               </Summary.BottomHeader>
               <Summary.BottomContent>
                 <BarGraph properties={properties} />
